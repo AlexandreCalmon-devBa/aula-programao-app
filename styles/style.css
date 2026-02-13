@@ -1,0 +1,244 @@
+/* Configurações Gerais */
+body {
+    background-color: #f0f0f0;
+    /* Adicionei um fallback caso a imagem não carregue */
+    background-image: url("../assets/fundo.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    display: flex; /* Flex é mais simples para centralizar um único item */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Garante que ocupe a tela toda */
+    margin: 0;
+}
+
+.pokedex-container {
+    background-color: #e3350d; /* Vermelho Pokémon */
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 0px #8b0000;
+    width: 300px;
+    text-align: center;
+}
+
+header h1 {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px #333;
+}
+
+header h3 {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px #333;
+    
+}
+
+button {
+    color: white;
+    background-image: url("../assets/fundo.jpg");
+    height: auto;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ol {
+    margin: 10px ;
+    padding: 30px ;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+li {
+    font-size: 14px;
+    margin: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #5a5959; /* Cor escura para contrastar com o vermelho */
+    color: white;
+    text-decoration: none;
+    border-radius: 50px; /* Bordas arredondadas estilo pílula */
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    transition: background 0.3s, transform 0.2s;
+    border: 2px solid #f1ebeb;
+}
+
+.btn-primary:hover {
+    background-image: url("../assets/fundo.jpg"); /* Fica amarelo ao passar o mouse */
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+/* O Cartão do Pokémon Interno */
+.pokemon-card {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    border: 4px solid #333;
+    box-shadow: inset 4px 4px 0px rgba(0,0,0,0.1);
+}
+
+.image-container {
+    background: linear-gradient(135deg, #a8e091 0%, #b2d8d8 100%); /* Fundo degradê suave */
+    border-radius: 10px;
+    margin-bottom: 15px;
+    border: 3px solid #333;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 150px;
+    transition: transform 0.3s;
+}
+
+/* Efeito de hover para dar vida */
+.image-container img:hover {
+    transform: scale(1.1);
+}
+
+.number {
+    color: #777;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.name {
+    margin: 5px 0;
+    color: #333;
+    text-transform: capitalize;
+}
+
+/* Estilo do Tipo */
+.types {
+    margin: 10px 0;
+}
+
+.type {
+    padding: 5px 15px;
+    border-radius: 20px;
+    color: white;
+    font-size: 0.8em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.electric {
+    background-color: #eed535;
+    color: #333;
+}
+
+.description {
+    font-size: 0.85em;
+    color: #555;
+    line-height: 1.4;
+}
+
+.pokedex-container {
+    background-color: #e3350d;
+    padding: 30px 20px;
+    border-radius: 20px;
+    box-shadow: 8px 8px 0px #8b0000;
+    width: 320px;
+    text-align: center;
+    border: 4px solid #333;
+}
+
+.pokemon-list {
+    list-style: none; /* Remove os números padrão */
+    padding: 0;
+    margin: 20px 0;
+}
+
+.pokemon-item {
+    background: #f8f8f8;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 5px solid #eed535; /* Faixa amarela lateral */
+}
+
+.badge {
+    font-size: 0.7em;
+    background: #ddd;
+    padding: 2px 8px;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+
+/* Estilização do container principal */
+.input-group {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    max-width: 500px;
+}
+
+/* Estilo do Label */
+.input-group label {
+    font-weight: 600;
+    color: #333;
+}
+
+/* Estilo do Input de texto */
+#pokemon {
+    flex-grow: 1; /* Faz o input ocupar o espaço disponível */
+    padding: 10px 15px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+/* Efeito ao clicar no input */
+#pokemon:focus {
+    border-color: #ef5350; /* Cor inspirada na Pokébola */
+}
+
+/* Estilo do Botão */
+#btn-primary {
+    background-color: #ef5350;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.1s active;
+}
+
+/* Efeitos do botão */
+#btn-primary:hover {
+    background-color: #d32f2f;
+}
+
+#btn-primary:active {
+    transform: scale(0.98);
+}
