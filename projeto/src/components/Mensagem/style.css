@@ -1,0 +1,34 @@
+/* Estilo principal do container da mensagem */
+.mensagem {
+  background-color: #242424; /* Fundo escuro (padrão Vite) */
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2); /* Sombra suave para dar profundidade */
+  max-width: 400px;
+  margin: 20px auto; /* Centraliza o componente na tela */
+  text-align: center;
+  border: 1px solid #333; /* Bordinha sutil */
+  transition: transform 0.2s ease; /* Efeito suave de transição */
+}
+
+/* Efeito ao passar o mouse por cima do cartão */
+.mensagem:hover {
+  transform: translateY(-5px);
+}
+
+/* Estilo do título */
+.mensagem h1 {
+  background: linear-gradient(90deg, #8a2be2, #4169e1); 
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  line-height: 1.5; /* Aumenta o espaço da linha */
+}
+
+/* Estilo do parágrafo */
+.mensagem p {
+  color: #a0a0a0; /* Um cinza mais claro para dar contraste e não cansar a vista */
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0;
+}
